@@ -1,53 +1,256 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>shadowテスト</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>osumou flowers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" href="img/favicon_black.png">
   <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'xur5uyv',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <h1>LOGO</h1>
-    </div>
 
-    <div class="pc-menu">
+  <div class="wrap-top">
+    <div class="yellow-top"></div> 
+
+    <header id="openHeader">
+      <div class="logo-header">
+          <img src="img/logo_black_rect.png" alt="osumou flowers">
+      </div>
+
+      <div class="button-nav hide-pc">
+        <span class="material-icons" id="open">menu</span>
+      </div>
+
+      <!-- (pc only) nav-top -->
+      <div class="pc-menu hide">
+        <nav>
+          <ul class="en">
+            <li><a href="#">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="howToCare.html">HOW TO CARE</a></li>
+            <li><a href="access.html">ACCESS</a></li>
+            <li><a href="#"><img src="img/Instagram-gray.png" alt="Instagram"  width="44" height="44"></a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+  <!-- sp オーバーレイメニュー -->
+    <div class="overlay">
+      <span class="material-icons" id="close">close</span>
       <nav>
-        <ul>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Menu</a></li>
+        <ul class="en">
+          <li><a href="#">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="howToCare.html">HOW TO CARE</a></li>
+          <li><a href="access.html">ACCESS</a></li>
+          <li><a href="#"><img src="img/Instagram-gray.png" alt="Instagram"  width="44" height="44"></a></li>
+          <li><a href=""><img src="img/sumo1.png" alt=""></a></li>
         </ul>
       </nav>
     </div>
 
-    <div class="sp-menu">
-      <span class="material-icons" id="open">menu</span>
+    <div class="container-top">
+      <h1>osumou san no ohanaya san</h1>
+      <img src="img/favicon_gray.png" alt="">
+  
+      <div class="sp-instagram hide-pc">
+        <p>今日の日替わりブーケを見る</p>
+        <a href="#"><img class="hide-pc" src="img/Instagram-gray.png" alt="Instagram" width="44" height="44"></a>
+      </div>
+  
+      <span class="arrow-down material-icons" id="arrow">
+        keyboard_arrow_down
+      </span>
     </div>
-  </header>
-
-  <div class="overlay">
-    <span class="material-icons" id="close">close</span>
-    <nav>
-      <ul>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Menu</a></li>
-      </ul>
-    </nav>
   </div>
 
-  <main>
-    <p>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</p>
-    <p>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</p>
-  </main>
+<!-- ------ PRODUCTS ------ -->
+  <section class="wrap-products">
+    <div class="container-products">
+      <h2 class="en">PRODUCTS</h2>
+      <p>ご予算やご希望のサイズに合わせて、3種類のオリジナルブーケをご用意しています。<br>ブーケに使用される花の種類と組み合わせは季節に合わせて毎日変わります。</p>
+      
+      <ul class="list-products">
+        <li>
+          <picture>
+            <source srcset="img/pc_yokozuna-s.png" media="(min-width: 800px)">
+            <img src="img/sp_yokozuna.png" alt="">
+          </picture>
+          <h3>横綱 | ¥9,800</h3>
+            <p>特別な日に。<br>
+              5種類以上の花をふんだんに使用した華やかなブーケです。<br>
+              数量限定のため、前日までのご予約がおすすめです。</p>
+        </li>
+        <li>
+          <picture>
+            <source srcset="img/pc_ozeki-s.png" media="(min-width: 800px)">
+            <img src="img/sp_ozeki.png" alt="">
+          </picture>
+          <h3>大関 | ¥3,980</h3>
+          <p>ちょっとした贈りものに。<br>
+            高すぎず安すぎず、ちょうどよい価格とボリュームです。<br>
+            3～5種類の旬の花を使用しています。</p>
+        </li>
+        <li>
+          <picture>
+            <source srcset="img/pc_komusubi-s.png" media="(min-width: 800px)">
+            <img src="img/sp_komusubi.png" alt="">
+          </picture>
+          <h3>小結 | ¥980</h3>
+          <p>一番人気のブーケ。<br>
+            日常に彩りを添えてくれるよう願いを込めた商品です。<br>
+            1～３種類の人気の花を使用しています。</p>
+        </li>
+      </ul>
+  
+      <div class="container-annot">
+        <p class="annot">&middot; 表示価格はすべて税込みです。<br>
+          &middot; 写真のブーケは日替わりの一例です</p>
+      </div>
+    </div>
+  </section>
 
-  <!-- 追加 -->
-    <img src="sp_komusubi.png" alt="">
+  <!-- --- ｓｐ スライド --- -->
+  <article class="wrap-slide hide-pc">
+    <div class="container-slide">
+      <img src="img/slide1.png">
+      <img src="img/slide2.png">
+    </div>
+  </article>
+
+  <!-- --- ｐｃ インスタ --- -->
+  <article class="wrap-gallery hide">
+    <div class="container-instagram"> 
+      <img class="frame-pc" src="img/pc-frame.png" alt="">
+      <p>本日の日替わりブーケはこちらでご覧いただけます</p>
+    </div>
+    <a href="#"><img src="img/Instagram-gray.png" alt="Instagram" width="44" height="44"></a>
+
+    <!-- --- ｐｃ タブ --- -->
+    <div class="container-tab hide">
+      <ul class="menu-tab">
+        <li><a href="#" class="active" data-id="yokozuna">横綱</a></li>
+        <li><a href="#" data-id="ozeki">大関</a></li>
+        <li><a href="#" data-id="komusubi">小結</a></li>
+      </ul>
+  
+      <div class="content-tab active" id="yokozuna">
+        <div class="text-tab">YOKOZUNA</div>
+      </div>
+  
+      <div class="content-tab" id="ozeki">
+        <div class="text-tab">OZEKI</div>
+      </div>
+
+      <div class="content-tab" id="komusubi">
+        <div class="text-tab">KOMUSUBI</div>
+      </div>
+    </div>
+  </article>
+
+<!------- INFO ------->
+  <section class="wrap-info">
+    <div class="container-info">
+      <h2 class="en">INFORMATION</h2>
+  
+      <div class="pc-l-info">
+        <table class="table-info">
+          <tbody>
+            <tr>
+              <td class="item">営業時間</td>
+              <td>11:00-20:00</td>
+            </tr>
+            <tr>
+              <td class="item">定休日</td>
+              <td>月曜</td>
+            </tr>
+            <tr>
+              <td class="item">住所</td>
+              <td>東京都目黒区東山x-x-x</td>
+            </tr>
+            <tr>
+              <td class="item">電話番号</td>
+              <td>03-xxxx-xxxx</td>
+            </tr>
+            <tr>
+              <td colspan="2">※お花のご予約・お問い合わせ等は
+                お電話にてお願いいたします。</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pc-l-map">
+          <img class="img-map" src="img/map.png" alt="地図">
+          <p>目黒東駅より徒歩5分 / 目黒駅より徒歩12分</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!------- MORE INFO ------->  
+<article class="wrap-more-info">
+  <div class="container-more-info">
+    <div class="inner-more-info">
+      <picture>
+        <source srcset="img/cashless.png" media="(min-width: 800px)">
+        <img src="img/sp-cashless.png" alt="キャッシュレス決済を推進しています">
+      </picture>
+      <p class="hide-pc">キャッシュレス決済を<br>推進しています</p>
+    </div>
+
+    <div class="inner-more-info">
+      <picture>
+        <source srcset="img/distance.png" media="(min-width: 800px)">
+        <img src="img/sp-distance.png" alt="間隔をあけてお並びください">
+      </picture>
+      <p class="hide-pc">間隔をあけて<br>お並びください</p>
+    </div>
+
+    <div class="inner-more-info">
+      <picture>
+        <source srcset="img/mask.png" media="(min-width: 800px)">
+        <img src="img/sp-mask.png" alt="マスクをご着用ください">
+      </picture>
+      <p class="hide-pc">マスクを<br>ご着用ください</p>
+    </div>
+  </div>
+</article>
+
+<!------- FOOTER ------->
+  <footer class="wrap-footer">
+    <div class="container-footer">
+      <img src="img/logo_white_square.png" alt="osumou flowers">
+      <nav class="pc-menu hide">
+        <ul class="en">
+          <li><a href="#">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="howToCare.html">HOW TO CARE</a></li>
+          <li><a href="access.html">ACCESS</a></li>
+          <li><a href="#"><img src="img/Instagram-white.png" alt="Instagram"  width="44" height="44"></a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="en">&copy; osumou flowers  all  rights reserved.</p>
+  </footer>
 
   <script src="js/main.js"></script>
+
 </body>
 </html>
