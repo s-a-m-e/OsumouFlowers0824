@@ -89,6 +89,24 @@ body {
   background: #D9A62E;
 }
 
+.yellow-top p,
+.yellow-top a {
+  font-size: 12px;
+  color: #000;
+  display: inline;
+  font-family: sans-serif;
+
+}
+.yellow-top a {
+  color: #0000EE;
+  text-decoration: underline;
+}
+.yellow-top　a:visited {
+  color: #551A8B;
+  text-decoration: underline;
+}
+
+
 header {
   width: 100%;
   max-width: 1000px;
