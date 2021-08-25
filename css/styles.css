@@ -314,6 +314,9 @@ header {
   left: 0;
   right: 0;
   margin: auto;
+  cursor: pointer;
+  width: 100px;
+  scroll-behavior: smooth;
 }
 
 /* ----- pc TOP ----- */
